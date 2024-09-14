@@ -1,1 +1,1 @@
-# Yacht
+# parcel-project-template
