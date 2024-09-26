@@ -1,0 +1,23 @@
+// Стиили для 1200px
+
+.hero-btn {
+  height: 48px;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  border-radius: 60px;
+  color: $white;
+}
+
+.button-started {
+  width: 150px;
+  margin-right: 11px;
+  background: $light-green;
+  border: none;
+}
+
+.button-explore {
+  border: 2px solid $white;
+  width: 117px;
+  background-color: $dark-blue;
+}
