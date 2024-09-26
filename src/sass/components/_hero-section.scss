@@ -1,0 +1,124 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 236px;
+  width: 554px;
+  height: 360px;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: $white;
+
+  .hero-part {
+    font-style: italic;
+    background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.hero-information {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: $white;
+}
+
+.button-started {
+  border-radius: 60px;
+  padding: 14px 28px;
+  margin-right: 11px;
+  width: 150px;
+  height: 48px;
+  background: $light-green;
+  border: none;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: $white;
+}
+
+.button-explore {
+  border: 2px solid $white;
+  border-radius: 60px;
+  padding: 14px 28px;
+  width: 117px;
+  height: 48px;
+  background-color: $dark-blue;
+  font-size: 18px;
+  line-height: 1.10;
+  letter-spacing: -0.04em;
+  color: $white;
+}
+
+.hero-list {
+  position: relative;
+
+  .hero-list-item:nth-child(1) {
+    width: 426px;
+  }
+  .hero-list-item:nth-child(2) {
+    position: absolute;
+    top: 225px;
+    left: 0;
+    width: 378px;
+    height: 221px;
+
+    .hero-yacht-link {
+      display: flex;
+      align-items: center;
+      width: 362px;
+      margin-left: 32px;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: $dark-blue;
+
+      .hero-yacht-part {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        color: $dark-blue;
+        text-transform: none;
+        margin-left: 14px;
+      }
+    }
+  }
+  .hero-list-item:nth-child(3) {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 149px;
+    height: 82px;
+
+    .clients-link {
+      margin-top: 11px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $dark-blue;
+    }
+  }
+  .hero-list-item:nth-child(4) {
+    position: absolute;
+    top: 32px;
+    left: 305px;
+    width: 233px;
+    height: 233px;
+  }
+}
