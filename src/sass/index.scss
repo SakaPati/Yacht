@@ -1,3 +1,4 @@
+@import 'abstracts/variables';
 @import 'abstracts/mixin';
 @import 'abstracts/placeholders';
 
@@ -6,6 +7,7 @@
 @import "base/reset";
 @import 'base/common';
 @import 'base/typography';
+@import 'components/hero-section';
 
 @import 'components/container';
 @import 'components/buttons';
