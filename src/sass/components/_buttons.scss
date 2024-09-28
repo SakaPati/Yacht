@@ -21,3 +21,16 @@
   width: 117px;
   background-color: $dark-blue;
 }
+// 320px
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 1px solid $white;
+}
+.left {
+  transform: rotate(180deg);
+}
