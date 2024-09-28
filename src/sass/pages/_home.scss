@@ -1,0 +1,51 @@
+.yacht__slider {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .slider-item {
+    width: 335px;
+    height: 469px;
+    padding: 18px 18px 24px;
+    border-radius: 24px;
+    background-color: $blue-2;
+    .item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      margin-bottom: 24px;
+
+      .slider-title {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: $white;
+      }
+      .slider-yacht {
+        font-family: $font-family;
+        font-size: 12px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white;
+        opacity: 0.5;
+      }
+    }
+    .list-item {
+      display: flex;
+      .info {
+        text-transform: uppercase;
+        margin-right: 32px;
+        margin-bottom: 8px;
+        width: 58px;
+      }
+      .item-info {
+        font-family: $font-family;
+        font-size: 14px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $white;
+        
+      }
+    }
+  }
+}
