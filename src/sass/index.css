@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -32,7 +32,31 @@ body {
   background-color: #11131f;
 }
 
+.hero {
+  padding-top: 64px;
+  padding-bottom: 164px;
+}
+.hero .blure {
+  position: absolute;
+  left: -170px;
+  width: 700px;
+  height: 300px;
+  filter: blur(200px);
+  border-radius: 100%;
+  background-color: #91afba;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 236px;
+  width: 554px;
+  height: 360px;
+}
+
 .hero-title {
+  width: 554px;
+  margin-bottom: 16px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 60px;
@@ -40,13 +64,74 @@ body {
   letter-spacing: -0.04em;
   color: #f6f5ef;
 }
-
-.hero-part {
+.hero-title .hero-part {
+  color: #a1b5ba;
   font-style: italic;
-  background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+.hero-information {
+  margin-bottom: 32px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #f6f5ef;
+}
+
+.hero-list {
+  position: relative;
+}
+.hero-list .hero-list-item:nth-child(1) {
+  width: 426px;
+}
+.hero-list .hero-list-item:nth-child(2) {
+  position: absolute;
+  top: 225px;
+  left: 0;
+  width: 378px;
+  height: 221px;
+}
+.hero-list .hero-list-item:nth-child(2) .hero-yacht-link {
+  display: flex;
+  align-items: center;
+  width: 362px;
+  margin-left: 32px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #11131f;
+}
+.hero-list .hero-list-item:nth-child(2) .hero-yacht-link .hero-yacht-part {
+  margin-left: 14px;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: none;
+  color: #11131f;
+}
+.hero-list .hero-list-item:nth-child(3) {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 149px;
+  height: 82px;
+}
+.hero-list .hero-list-item:nth-child(3) .clients-link {
+  margin-top: 11px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #11131f;
+}
+.hero-list .hero-list-item:nth-child(4) {
+  position: absolute;
+  top: 32px;
+  left: 305px;
+  width: 233px;
+  height: 233px;
 }
 
 .container {
@@ -68,4 +153,82 @@ body {
   .container {
     width: 1216px;
   }
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
+  height: 48px;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  border-radius: 60px;
+  color: #f6f5ef;
+}
+
+.button-started {
+  width: 150px;
+  margin-right: 11px;
+  background: #93abae;
+  border: none;
+}
+
+.button-explore {
+  border: 2px solid #f6f5ef;
+  width: 117px;
+  background-color: #11131f;
+}
+
+.yacht__slider {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.yacht__slider .slider-item {
+  width: 335px;
+  height: 469px;
+  padding: 18px 18px 24px;
+  border-radius: 24px;
+  background-color: #1f212d;
+}
+.yacht__slider .slider-item .item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.yacht__slider .slider-item .item-wrapper .slider-title {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #f6f5ef;
+}
+.yacht__slider .slider-item .item-wrapper .slider-yacht {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f6f5ef;
+  opacity: 0.5;
+}
+.yacht__slider .slider-item .list-item {
+  display: flex;
+}
+.yacht__slider .slider-item .list-item .info {
+  text-transform: uppercase;
+  margin-right: 32px;
+  margin-bottom: 8px;
+  width: 58px;
+}
+.yacht__slider .slider-item .list-item .item-info {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #f6f5ef;
 }/*# sourceMappingURL=index.css.map */
