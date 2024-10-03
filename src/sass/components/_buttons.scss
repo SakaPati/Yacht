@@ -34,19 +34,3 @@
 .left {
   transform: rotate(180deg);
 }
-.dream-btn {
-  width: 131px;
-  height: 43px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  color: $white;
-  background-color: transparent;
-  border: 1px solid $white;
-  border-radius: 60px;
-  transform: translateY(-90px);
-  @media screen and (min-width: 768px) {
-    transform: none;
-  }
-}
