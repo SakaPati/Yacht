@@ -1,3 +1,39 @@
+//Yacht dream
+.dream {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  .yacht-container {
+    position: relative;
+    display: flex;
+    .yacht {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+    .yacht-item:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .blure {
+      position: absolute;
+      bottom: 0px;
+      left: -70px;
+      width: 255px;
+      height: 255px;
+      filter: blur(100px);
+      border-radius: 100%;
+      background-color: #91afba;
+      opacity: 0.6;
+    }
+  }
+  .dream-yacht {
+    width: 310px;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: $white;
+    transform: translateY(-130px);
+  }
+}
 // //Yacht dream
 // .dream {
 //   padding-top: 40px;
@@ -129,6 +165,39 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .dream {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    //На 768 пикселей не получается последнюю фотку опустить вниз.
+    //Для этого нужно делать ретинизацию не через picture
+    .yacht-container {
+      .yacht {
+        flex-direction: row;
+        align-items: end;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+    }
+    .dream-yacht {
+      width: 641px;
+      font-size: 70px;
+      transform: none;
+    }
+  }
+  .yacht__slider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .slider {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      .slider-item {
+        flex-basis: calc((100% - 1 * 16px) / 2);
+      }
+    }
+  }
+}
 .slider-yacht {
   color: $white;
   opacity: 0.5;
