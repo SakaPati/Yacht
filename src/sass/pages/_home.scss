@@ -34,71 +34,135 @@
     transform: translateY(-130px);
   }
 }
+// //Yacht dream
+// .dream {
+//   padding-top: 40px;
+//   padding-bottom: 80px;
+// }
 
-//Yacht slider
-.yacht__slider {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  .slider-item {
-    width: 335px;
-    height: 469px;
-    padding-bottom: 32px;
-    border-radius: 24px;
-    background-color: $blue-2;
-    .slider-link {
-      padding: 16px 16px 16px 16px;
-    }
-    .item-wrapper {
-      display: flex;
-      justify-content: space-between;
-      width: 280px;
-      margin-top: 24px;
-      margin-bottom: 24px;
-      margin-left: 32px;
+// //Yacht slider
+// .yacht__slider {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+//   .slider-item {
+//     width: 335px;
+//     height: 469px;
+//     padding-bottom: 32px;
+//     border-radius: 24px;
+//     background-color: $blue-2;
+//     .slider-link {
+//       padding: 16px 16px 16px 16px;
+//     }
+//     .item-wrapper {
+//       display: flex;
+//       justify-content: space-between;
+//       width: 280px;
+//       margin-top: 24px;
+//       margin-bottom: 24px;
+//       margin-left: 32px;
 
-      .slider-title {
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: -0.04em;
-        text-transform: uppercase;
-        color: $white;
-      }
-      .slider-yacht {
-        font-family: $font-family;
-        font-size: 12px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $white;
-        opacity: 0.5;
-      }
-    }
-    .list-item {
-      display: flex;
-      margin-left: 32px;
-      .info {
-        width: 58px;
-        text-transform: uppercase;
-        margin-right: 32px;
-        margin-bottom: 8px;
-      }
-      .item-info {
-        font-family: $font-family;
-        font-size: 14px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: $white;
-      }
-    }
-  }
-  .btn-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-    .left-btn {
-      margin-right: 14px;
-    }
-  }
+//       .slider-title {
+//         font-size: 16px;
+//         line-height: 1.2;
+//         letter-spacing: -0.04em;
+//         text-transform: uppercase;
+//         color: $white;
+//       }
+//       .slider-yacht {
+//         font-family: $font-family;
+//         font-size: 12px;
+//         line-height: 1.18;
+//         letter-spacing: 0.03em;
+//         text-transform: uppercase;
+//         color: $white;
+//         opacity: 0.5;
+//       }
+//     }
+//     .list-item {
+//       display: flex;
+//       margin-left: 32px;
+//       .info {
+//         width: 58px;
+//         text-transform: uppercase;
+//         margin-right: 32px;
+//         margin-bottom: 8px;
+//       }
+//       .item-info {
+//         font-family: $font-family;
+//         font-size: 14px;
+//         line-height: 1.18;
+//         letter-spacing: 0.03em;
+//         color: $white;
+//       }
+//     }
+//   }
+// .btn-wrapper {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 24px;
+//   .left-btn {
+//     margin-right: 14px;
+//   }
+// }
+// }
+// @media screen and (min-width: 768px) {
+//   .yacht__slider {
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+//     .slider {
+//       display: flex;
+//       flex-wrap: wrap;
+//       column-gap: 16px;
+//       .slider-item {
+//         flex-basis: calc((100% - 1 * 16px) / 2);
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .yacht__slider {
+//     padding-top: 164px;
+//     padding-bottom: 164px;
+//     .slider {
+//       flex-wrap: wrap;
+//       .slider-item {
+//         height: auto;
+//         width: 354px;
+//         flex-basis: auto;
+//         // flex-basis: calc((100% - 2 * 16px) / 3); Я убрал флекс ширину потому что карточка была больше чем на макете
+//         .slider-link {
+//           margin: auto;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-item {
+  width: 354px;
+  padding-bottom: 32px;
+  border-radius: 24px;
+  background-color: $blue-2;
+}
+
+.p-16 {
+  padding: 16px 16px 0px 16px;
+}
+.item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  align-items: baseline;
+  color: aqua;
+}
+
+.slider-title {
+  color: $white;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -134,21 +198,59 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
-  .yacht__slider {
-    padding-top: 164px;
-    padding-bottom: 164px;
-    .slider {
-      flex-wrap: wrap;
-      .slider-item {
-        height: auto;
-        width: 354px;
-        flex-basis: auto;
-        // flex-basis: calc((100% - 2 * 16px) / 3); Я убрал флекс ширину потому что карточка была больше чем на макете
-        .slider-link {
-          margin: auto;
-        }
-      }
-    }
-  }
+.slider-yacht {
+  color: $white;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.list-item {
+  display: flex;
+  margin-left: 32px;
+}
+
+.info {
+  width: 58px;
+  text-transform: uppercase;
+  margin-right: 32px;
+  margin-bottom: 8px;
+}
+
+.item-info {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $white;
+}
+
+.carousel-control-prev {
+  display:block;
+  padding: 14px 16px 14px 16px;
+  opacity: 1;
+  width: 18px;
+  height: 8px;
+  left: -60px;
+  margin-top: 250px;
+  margin-left: 10px;
+  border-radius: 60px;
+  border: 2px solid $white;
+}
+.carousel-control-next {
+  display:block;
+  padding: 14px 16px 14px 16px;
+  opacity: 1;
+  width: 18px;
+  height: 8px;
+  right: -20px;
+  margin-top: 250px;
+  margin-left: 10px;
+  border-radius: 60px;
+  border: 2px solid $white;
+}
+
+.btn-prev,
+.btn-next{
+  margin-left: -10px;
+  margin-top: -24px;
 }
