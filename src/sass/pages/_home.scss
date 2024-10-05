@@ -143,12 +143,16 @@
   justify-content: space-between;
 }
 .carousel-item {
+  // display: block;
   width: 354px;
   padding-bottom: 32px;
   border-radius: 24px;
   background-color: $blue-2;
+  flex-basis: calc((100% - 2 * 16px) / 3);
 }
-
+.carousel-inner {
+  overflow: visible;
+}
 .p-16 {
   padding: 16px 16px 0px 16px;
 }
