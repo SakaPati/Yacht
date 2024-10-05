@@ -29,6 +29,7 @@ p {
 }
 
 body {
+  font-family: "DM Sans", sans-serif;
   background-color: #11131f;
 }
 
@@ -197,6 +198,200 @@ body {
   transform: rotate(180deg);
 }
 
+.dream-btn {
+  width: 131px;
+  height: 43px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #f6f5ef;
+  background-color: transparent;
+  border: 1px solid #f6f5ef;
+  border-radius: 60px;
+  transform: translateY(-90px);
+}
+@media screen and (min-width: 768px) {
+  .dream-btn {
+    transform: none;
+  }
+}
+
+/* Updated styles for the testimonial section */
+.testimonials-section {
+  background-color: #0d0f18;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+/* Header and description section */
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px; /* Increased space between header and testimonials */
+}
+
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.title em {
+  font-style: italic;
+  color: #8c8f96; /* Slight gray tone */
+}
+
+.description {
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-align: justify;
+}
+
+/* Grid for testimonial cards */
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased gap for better spacing */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  background-color: #191b24;
+  padding: 30px 25px; /* Increased padding */
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for better emphasis */
+  max-width: 300px;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.testimonial-photo {
+  width: 70px; /* Larger photo size */
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Larger space below the photo */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #d1d3da;
+  line-height: 1.6;
+}
+
+/* Dots for navigation */
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Increased space above dots */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px; /* Larger space between dots */
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+.dot:hover {
+  background-color: #aaa;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .testimonials-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .description-container {
+    text-align: center;
+  }
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials-dots {
+    margin-top: 30px;
+  }
+}
+.dream {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.dream .yacht-container {
+  position: relative;
+  display: flex;
+}
+.dream .yacht-container .yacht {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.dream .yacht-container .yacht-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.dream .yacht-container .blure {
+  position: absolute;
+  bottom: 0px;
+  left: -70px;
+  width: 255px;
+  height: 255px;
+  filter: blur(100px);
+  border-radius: 100%;
+  background-color: #91afba;
+  opacity: 0.6;
+}
+.dream .dream-yacht {
+  width: 310px;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #f6f5ef;
+  transform: translateY(-130px);
+}
+
 .carousel-inner {
   display: flex;
   justify-content: space-between;
@@ -226,6 +421,36 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .dream {
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+  .dream .yacht-container .yacht {
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .dream .dream-yacht {
+    width: 641px;
+    font-size: 70px;
+    transform: none;
+  }
+  .yacht__slider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .yacht__slider .slider {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .yacht__slider .slider .slider-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
 .slider-yacht {
   color: #f6f5ef;
   opacity: 0.5;
