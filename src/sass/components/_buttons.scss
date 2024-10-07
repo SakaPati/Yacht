@@ -45,8 +45,17 @@
   background-color: transparent;
   border: 1px solid $white;
   border-radius: 60px;
-  transform: translateY(-90px);
+  transform: translateY(-30px);
   @media screen and (min-width: 768px) {
+    width: 154px;
+    height: 48px;
+    font-size: 18px;
     transform: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-left: auto;
   }
 }
