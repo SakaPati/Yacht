@@ -2,14 +2,14 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
-    width: 333px;
+  @media screen and (min-width: 375px) {
+    width: 375px;
   }
   @media screen and (min-width: 768px) {
-    width: 704px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1216px;
+    width: 1280px;
   }
 }
 // стили на 1200
@@ -17,4 +17,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  
+  @media screen and (min-width:375px) and (max-width:1200px) {
+    flex-direction: column-reverse;
+  }
 }
