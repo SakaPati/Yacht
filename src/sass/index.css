@@ -47,4 +47,55 @@ p {
   .container {
     width: 1216px;
   }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px rgba(246, 245, 239, 0.2);
+}
+
+.header-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.header-svg {
+  position: relative;
+  top: 6px;
+  left: 3px;
+}
+
+a, .link {
+  color: currentColor;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.header-container .link {
+  padding: 32px 0;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
