@@ -40,9 +40,10 @@ body {
 .hero .blure {
   position: absolute;
   left: -170px;
+  top: 350px;
   width: 100%;
   height: 300px;
-  filter: blur(200px);
+  filter: blur(120px);
   border-radius: 100%;
   background-color: #91afba;
 }
@@ -78,6 +79,11 @@ body {
   background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  .hero-title .hero-part {
+    font-style: normal;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -222,7 +228,6 @@ body {
 }
 
 .man {
-  border-radius: 24px;
   width: 133px;
   height: 133px;
 }
@@ -537,4 +542,54 @@ body {
     color: #f6f5ef;
     text-transform: uppercase;
   }
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+.sliderr-btn {
+  width: 18px;
+}
+
+.controls #leftBtn,
+.controls #rightBtn {
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .gallery img {
+  border-radius: 24px;
+  width: 322px;
+  height: 268px;
+}
+
+.img-container {
+  border-radius: 24px;
+  padding-top: 16px;
+  text-align: -webkit-center;
+  width: 354px;
+  height: 508px;
+  background-color: #1f212d;
+}
+
+.img-container:nth-child(-n+2) {
+  margin-right: 10px;
 }/*# sourceMappingURL=index.css.map */
