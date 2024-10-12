@@ -1,17 +1,90 @@
 <section class="activity">
   <div class="container">
-    <ul>
-      <li>
-        <img src="./images/diving@1x.png" alt="diving" />
-        <p>Diving</p>
+    <div class="blure"></div>
+    <ul class="activity-list">
+      <li class="activity-item">
+        <picture>
+          <source
+            media="(min-width: 1220px)"
+            srcset="./images/diving@1x.png 1x, ./images/diving@2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/diving-tablet@1x.png 1x,
+              ./images/diving-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./images/diving-mobile@1x.png 1x,
+              ./images/diving-mobile@2x.png 2x
+            "
+          />
+          <img src="./images/diving-mobile@1x.png" alt="diving" />
+        </picture>
+        <div class="activity-container">
+          <p class="activity-kind">Diving</p>
+        </div>
       </li>
-      <li>
-        <img src="./images/fishing@1x.png" alt="diving" />
-        <p>Fishing</p>
+
+      <li class="activity-item">
+        <picture>
+          <source
+            media="(min-width: 1220px)"
+            srcset="./images/fishing@1x.png 1x, ./images/fishing@2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/fishing-tablet@1x.png 1x,
+              ./images/fishing-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./images/fishing-mobile@1x.png 1x,
+              ./images/fishing-mobile@2x.png 2x
+            "
+          />
+          <img src="./images/fishing-mobile@1x.png" alt="diving" />
+        </picture>
+        <div class="activity-container">
+          <p class="activity-kind">Fishing</p>
+        </div>
       </li>
-      <li>
-        <img src="./images/sunbathing@1x.png" alt="diving" />
-        <p>Sunbathing</p>
+
+      <li class="activity-item">
+        <picture>
+          <source
+            media="(min-width: 1220px)"
+            srcset="
+              ./images/sunbathing@1x.png 1x,
+              ./images/sunbathing@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/sunbathing-tablet@1x.png 1x,
+              ./images/sunbathing-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./images/sunbathing-mobile@1x.png 1x,
+              ./images/sunbathing-mobile@2x.png 2x
+            "
+          />
+          <img src="./images/sunbathing-mobile@1x.png" alt="diving" />
+        </picture>
+
+        <div class="activity-container">
+          <p class="activity-kind">Sunbathing</p>
+        </div>
       </li>
     </ul>
   </div>
