@@ -1,0 +1,78 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 40px;
+  width: 570px;
+  height: 522px;
+  padding: 32px;
+  background-color: $dark-blue;
+  transform: translate(-50%, -50%);
+}
+
+.modal-btn {
+  margin-left: 482px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container-thank-yacht {
+  position: relative;
+  text-align: -webkit-center;
+  margin-top: 41px;
+}
+
+.container-thank-text {
+  margin: 0 auto;
+  width: 442px;
+  height: 142px;
+}
+
+.container-thank-text h2,
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: $white;
+}
+
+.container-thank-text h2 {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+}
+
+.modal-blure {
+  position: absolute;
+  z-index: -1;
+  left: 120px;
+  top: 0px;
+  width: 265px;
+  height: 265px;
+  filter: blur(200px);
+  border-radius: 100%;
+  background-color: #91afba;
+}

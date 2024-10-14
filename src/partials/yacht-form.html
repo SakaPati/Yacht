@@ -1,21 +1,101 @@
 <section class="yacht__form">
-  <div class="container">
-    <h4>Rent a yacht now</h4>
-    <img src="./images/form-img@1x.png" alt="" />
+  <div class="container forms">
+    <div class="form-blure"></div>
+    <div class="rent-container">
+      <h4 class="rent-title">Rent a yacht now</h4>
+      <img src="./images/form-img@1x.png" class="rant-yacht" />
+    </div>
 
-    <form>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" />
+    <form class="rant-form">
+      <label for="name" class="label-form">Full Name</label>
+      <input type="text" id="name" class="input-form" />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" />
+      <label for="email" class="label-form">Email</label>
+      <input type="email" id="email" class="input-form" />
 
-      <label for="phone-number">Phone number</label>
-      <input type="number" id="phone-number" />
+      <label for="phone-number" class="label-form">Phone number</label>
+      <input type="number" id="phone-number" class="input-form" />
 
-      <label for="comment">Comment</label>
-      <input type="text" id="comment" />
+      <label for="comment" class="label-form">Comment</label>
+      <input type="text" id="comment" class="input-form" />
+
+      <button class="rent-btn" data-modal-open>
+        Send
+        <svg
+          width="18"
+          height="10"
+          viewBox="0 0 18 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.5 0.669922L18 5.00005L12.5 9.33018V5.75005L0 5.75005L0 4.25005L12.5 4.25005V0.669922Z"
+            fill="#F6F5EF"
+          />
+        </svg>
+      </button>
     </form>
-    <button>Send</button>
   </div>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-close-modal>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="#F6F5EF"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="#F6F5EF"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="container-thank-yacht">
+        <div class="modal-blure"></div>
+        <img src="./images/hero-yacht@1x.png" alt="Thank you" />
+      </div>
+      <div class="container-thank-text">
+        <h2>Thank you</h2>
+        <p>
+          Thank you for choosing Yacht Adventures, your booking details have
+          been received and our team will be in touch shortly to confirm your
+          reservation and provide any additional information or assistance you
+          may need.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+        document.body.classList.toggle('no-scroll');
+      }
+    })();
+  </script>
 </section>
