@@ -1,83 +1,83 @@
-.forms {
+.yacht__form {
   position: relative;
-  display: flex;
-}
+  .forms {
+    display: flex;
+    .form-blure {
+      position: absolute;
+      top: 118px;
+      left: 79%;
+      width: 256px;
+      height: 267px;
+      filter: blur(110px);
+      background-color: #91afba;
+      border-radius: 100%;
+    }
+    .rent-container {
+      margin-right: 188px;
+      width: 282px;
+      height: 387px;
+    }
 
-.rent-container {
-  margin-right: 188px;
-  width: 282px;
-  height: 387px;
-}
+    .rent-title {
+      margin-bottom: 64px;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      color: $white;
+    }
 
-.rent-title {
-  margin-bottom: 64px;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  color: $white;
-}
+    .rant-form {
+      display: flex;
+      flex-direction: column;
+      width: 443px;
+      height: 378px;
+    }
 
-.rant-form {
-  display: flex;
-  flex-direction: column;
-  width: 443px;
-  height: 378px;
-}
+    .label-form {
+      color: $white;
+    }
 
-.label-form {
-  color: $white;
-}
+    .input-form {
+      background-color: transparent;
+      border: none;
+      height: 16px;
+      color: $white;
+      border-bottom: 1px solid $white;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      outline: none;
+    }
 
-.input-form {
-  background-color: transparent;
-  border: none;
-  height: 16px;
-  color: $white;
-  border-bottom: 1px solid $white;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
-  outline: none;
-}
+    .input-form:nth-child(-n + 6) {
+      margin-bottom: 28px;
+    }
+    .input-form:nth-child(8) {
+      margin-top: 58px;
+      margin-bottom: 60px;
+    }
 
-.input-form:nth-child(-n + 6) {
-  margin-bottom: 28px;
-}
-.input-form:nth-child(8) {
-  margin-top: 58px;
-  margin-bottom: 60px;
-}
+    .rent-btn {
+      display: inline-flex;
+      align-items: center;
+      width: 132px;
+      height: 48px;
+      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      border: 2px solid $white;
+      color: $white;
+      background-color: transparent;
+      border-radius: 60px;
+      cursor: pointer;
+    }
 
-.rent-btn {
-  display: inline-flex;
-  align-items: center;
-  width: 132px;
-  height: 48px;
-  padding: 14px 28px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  border: 2px solid $white;
-  color: $white;
-  background-color: transparent;
-  border-radius: 60px;
-  cursor: pointer;
-}
-
-.rent-btn svg {
-  margin-left: 16px;
-}
-
-.form-blure {
-  position: absolute;
-  left: 100%;
-  top: 0px;
-  width: 414px;
-  height: 414px;
-  filter: blur(200px);
-  border-radius: 100%;
-  background-color: #91afba;
+    .rent-btn svg {
+      margin-left: 16px;
+    }
+  }
 }
