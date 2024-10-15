@@ -39,31 +39,33 @@
     </form>
   </div>
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-btn" data-close-modal>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18 6L6 18"
-            stroke="#F6F5EF"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 6L18 18"
-            stroke="#F6F5EF"
-            stroke-width="1.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="modal" data-modal>
+      <button class="modal-btn" data-modal-close>
+        <a href="#">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
       </button>
       <div class="container-thank-yacht">
         <div class="modal-blure"></div>
@@ -86,7 +88,7 @@
       const refs = {
         openModalBtn: document.querySelector('[data-modal-open]'),
         closeModalBtn: document.querySelector('[data-modal-close]'),
-        modal: document.querySelector('[data-modal]'),
+        modal: document.querySelector('[data-backdrop]'),
       };
 
       refs.openModalBtn.addEventListener('click', toggleModal);
@@ -94,7 +96,6 @@
 
       function toggleModal() {
         refs.modal.classList.toggle('is-hidden');
-        document.body.classList.toggle('no-scroll');
       }
     })();
   </script>
