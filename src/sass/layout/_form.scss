@@ -1,7 +1,10 @@
 .yacht__form {
-  position: relative;
+
   .forms {
     display: flex;
+    justify-content: center;
+    position: relative;
+
     .form-blure {
       position: absolute;
       top: 118px;
@@ -11,11 +14,19 @@
       filter: blur(110px);
       background-color: #91afba;
       border-radius: 100%;
+
+      @media screen and (max-width: 767px) {
+        top: 580px;
+      }
     }
     .rent-container {
-      margin-right: 188px;
+      margin-right: 69px;
       width: 282px;
       height: 387px;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 188px;
+      }
     }
 
     .rent-title {
@@ -25,13 +36,25 @@
       line-height: 1.1;
       letter-spacing: -0.04em;
       color: $white;
+
+      @media screen and (max-width: 767px) {
+        font-size: 36px;
+      }
     }
 
     .rant-form {
       display: flex;
       flex-direction: column;
-      width: 443px;
-      height: 378px;
+      margin-top: 40px;
+      width: 335px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0px;
+        width: 364px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 443px;
+      }
     }
 
     .label-form {
@@ -41,6 +64,7 @@
     .input-form {
       background-color: transparent;
       border: none;
+      width: 100%;
       height: 16px;
       color: $white;
       border-bottom: 1px solid $white;
@@ -56,13 +80,24 @@
     }
     .input-form:nth-child(8) {
       margin-top: 58px;
-      margin-bottom: 60px;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+      }
     }
 
     
 
     .rent-btn svg {
       margin-left: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
     }
   }
 }
