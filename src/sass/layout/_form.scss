@@ -5,19 +5,9 @@
     justify-content: center;
     position: relative;
 
-    .form-blure {
+    .blure {
       position: absolute;
-      top: 118px;
-      left: 79%;
-      width: 256px;
-      height: 267px;
-      filter: blur(110px);
-      background-color: #91afba;
-      border-radius: 100%;
-
-      @media screen and (max-width: 767px) {
-        top: 580px;
-      }
+      top: 340px;
     }
     .rent-container {
       margin-right: 69px;

@@ -44,19 +44,6 @@
     cursor: pointer;
   }
 }
-// 320px
-// .slider-btn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 14px;
-//   background-color: transparent;
-//   border-radius: 60px;
-//   border: 1px solid $white;
-// }
-// .left {
-//   transform: rotate(180deg);
-// }
 .dream-btn {
   width: 131px;
   height: 43px;
@@ -114,4 +101,14 @@
     border-color: $light-green;
     cursor: pointer;
   }
+}
+.testimonial-btn {
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  background-color: $light-green;
+  border-radius: 8px;
+  border: none;
 }
