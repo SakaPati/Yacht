@@ -1,0 +1,114 @@
+.testimonials-section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .testimonials-title {
+    width: 335px;
+
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: $white;
+    .testimonial-part {
+      color: $light-green;
+      font-style: italic;
+    }
+  }
+
+  .testimonials-description {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: $white;
+  }
+
+  .testimonials-slider {
+    position: relative;
+    width: 335px;
+    height: 300px;
+  }
+
+  .testimonial-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 335px;
+    height: 208px;
+    padding: 24px;
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      visibility 0s 0.5s;
+    background: $blue-2;
+    border-radius: 24px;
+    text-align: center;
+    opacity: 0;
+    .testimonial-name {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      text-align: center;
+      color: $white;
+    }
+    .testimonial-text {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: rgba(246, 245, 239, 0.5);
+    }
+    .testimonial-photo {
+      width: 48px;
+      height: 48px;
+      margin: auto;
+    }
+  }
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  #slide1:checked ~ .testimonials-slider #testimonial-john {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+  }
+
+  #slide2:checked ~ .testimonials-slider #testimonial-victoria {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+  }
+
+  #slide3:checked ~ .testimonials-slider #testimonial-ihor {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+  }
+
+  .testimonials-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #1f212d;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot:hover {
+    background-color: #aaa;
+  }
+
+  #slide1:checked ~ .testimonials-dots label[for='slide1'],
+  #slide2:checked ~ .testimonials-dots label[for='slide2'],
+  #slide3:checked ~ .testimonials-dots label[for='slide3'] {
+    background-color: $light-green;
+  }
+}
