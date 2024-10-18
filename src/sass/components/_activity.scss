@@ -1,6 +1,5 @@
 .activity {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 80px;
   .blure {
     position: absolute;
@@ -39,7 +38,6 @@
 @media screen and (min-width: 768px) {
   .activity {
     position: relative;
-    padding-top: 100px;
     padding-bottom: 100px;
     .blure {
       top: 570px;
@@ -64,7 +62,6 @@
 }
 @media screen and (min-width: 1220px) {
   .activity {
-    padding-top: 164px;
     padding-bottom: 164px;
     .blure {
       top: 145px;
