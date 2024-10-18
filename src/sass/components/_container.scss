@@ -13,12 +13,28 @@
   }
 }
 // стили на 1200
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  &::after {
+    content: "";
+    display: inline;
+    width: 335px;
+    height: 1px;
+    margin-bottom: 140px;
+    margin-top: 24px;
+    background-color: rgba(246, 245, 239, 0.2);
+  }
+}
 .hero-container {
   position: relative;
   display: flex;
   align-items: center;
-  
-  @media screen and (min-width:375px) and (max-width:1200px) {
+
+  @media screen and (min-width: 375px) and (max-width: 1200px) {
     flex-direction: column-reverse;
   }
 }
