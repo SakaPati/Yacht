@@ -1,5 +1,4 @@
 .yacht__form {
-
   .forms {
     display: flex;
     justify-content: center;
@@ -80,14 +79,25 @@
       }
     }
 
-    
-
     .rent-btn svg {
       margin-left: 16px;
     }
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .yacht__form {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .forms {
+      .blure {
+        top: 0;
+        right: -30px;
+      }
     }
   }
 }
