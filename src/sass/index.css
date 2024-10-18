@@ -675,6 +675,24 @@ body {
     text-transform: uppercase;
   }
 }
+.slider-section {
+  position: relative;
+}
+
+.slider-fon {
+  position: absolute;
+  top: -530px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .slider-fon {
+    display: none;
+  }
+}
+
 .slider {
   width: 1200px;
   display: flex;
@@ -1037,6 +1055,17 @@ body {
 .testimonials-section #slide2:checked ~ .testimonials-dots label[for=slide2],
 .testimonials-section #slide3:checked ~ .testimonials-dots label[for=slide3] {
   background-color: #93abae;
+}
+
+.testimonials-section::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 96%;
+  height: 1px;
+  margin-left: 30px;
+  padding-top: 170px;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.2);
 }
 
 @media screen and (min-width: 768px) {
