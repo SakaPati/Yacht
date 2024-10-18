@@ -111,4 +111,14 @@
   background-color: $light-green;
   border-radius: 8px;
   border: none;
+  @media screen and (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+    bottom: 32px;
+    right: 32px;
+    .btn-icon {
+      width: 16px;
+      height: 30px;
+    }
+  }
 }
