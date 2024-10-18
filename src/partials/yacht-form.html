@@ -1,9 +1,28 @@
 <section class="yacht__form">
   <div class="container forms">
-      <div class="form-blure"></div>
     <div class="rent-container">
       <h4 class="rent-title">Rent a yacht now</h4>
-      <img src="./images/form-img@1x.png" class="rant-yacht" />
+      <picture>
+        <source
+          media="(min-width: 1220px)"
+          srcset="./images/form-img@1x.png 1x, ./images/form-img@2x.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/yacht-form_tablet@1x.png 1x,
+            ./images/yacht-form_tablet@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 375px)"
+          srcset="
+            ./images/form-img_mobile@1x.png 1x,
+            ./images/form-img_mobile@2x.png 2x
+          "
+        />
+        <img src="./images/form-img@1x.png" class="rant-yacht" />
+      </picture>
     </div>
 
     <form class="rant-form">
@@ -37,15 +56,45 @@
         </svg>
       </button>
     </form>
-    <svg width="363" height="684" viewBox="0 0 363 684" fill="none" xmlns="http://www.w3.org/2000/svg" class="blure">
+    <svg
+      width="363"
+      height="684"
+      viewBox="0 0 363 684"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="blure"
+    >
       <g opacity="0.6" filter="url(#filter0_f_92_1651)">
-        <ellipse cx="141.5" cy="141.5" rx="141.5" ry="141.5" transform="matrix(0.707107 -0.707107 0.705049 0.709159 142 342)" fill="#91AFBA" />
+        <ellipse
+          cx="141.5"
+          cy="141.5"
+          rx="141.5"
+          ry="141.5"
+          transform="matrix(0.707107 -0.707107 0.705049 0.709159 142 342)"
+          fill="#91AFBA"
+        />
       </g>
       <defs>
-        <filter id="filter0_f_92_1651" x="0.525391" y="0.584961" width="682.589" height="683.411" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter
+          id="filter0_f_92_1651"
+          x="0.525391"
+          y="0.584961"
+          width="682.589"
+          height="683.411"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-          <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_92_1651" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="100"
+            result="effect1_foregroundBlur_92_1651"
+          />
         </filter>
       </defs>
     </svg>

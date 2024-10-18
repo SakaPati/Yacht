@@ -13,7 +13,7 @@ itemSliders.forEach(slider => {
     if (screenWidth > 1200) {
       return 1152; // Для экрана более 1200px
     } else if (screenWidth >= 768 && screenWidth <= 1200) {
-      return 737.8; // Для экрана между 768px и 1200px
+      return 677; // Для экрана между 768px и 1200px
     } else if (screenWidth > 320 && screenWidth < 767) {
       return 345; // Для экрана между 320px и 767px
     } else {
