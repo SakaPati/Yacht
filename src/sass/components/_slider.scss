@@ -50,13 +50,11 @@
   display: none;
 }
 
-.slider .gallery,
-.mobile-slider .gallery {
+.slider .gallery {
   width: 100%;
   display: flex;
   justify-content: center;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+  column-gap: 20px;
   padding: 10px;
   flex: none;
 }
@@ -78,17 +76,15 @@
 
 .controls #leftBtn,
 .controls #rightBtn {
-  // width: 70px;
+
   cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
   .slider-yacht {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: $white;
     opacity: 0.5;
     text-transform: uppercase;
   }

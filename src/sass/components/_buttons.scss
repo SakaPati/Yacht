@@ -87,6 +87,7 @@
   align-items: center;
   width: 132px;
   height: 48px;
+  margin-top: 24px;
   padding: 14px 28px;
   font-weight: 700;
   font-size: 18px;
@@ -105,11 +106,21 @@
     border-color: $light-green;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1220px) {
+    margin-top: 64px;
+  }
 }
 .testimonial-btn {
   position: absolute;
   bottom: 22px;
   right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background-color: $light-green;

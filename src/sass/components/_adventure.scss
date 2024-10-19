@@ -3,12 +3,11 @@
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.04em;
-  color: $white;
 
   @media screen and (min-width: 768px) {
-    font-size: 30px;
     width: 514px;
     height: 152px;
+    font-size: 30px;
   }
 }
 
@@ -16,7 +15,7 @@
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.04em;
   background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
   background-clip: text;
@@ -47,7 +46,6 @@
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: -0.02em;
-  color: $white;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
