@@ -5,7 +5,7 @@
   "homepage": "https://github.com/SakaPati/Yacht",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /https://github.com/SakaPati/Yacht/"
+    "build": "parcel build src/*.html --public-url /Yacht/"
   },
   "repository": {
     "type": "git",
